@@ -5,8 +5,11 @@ jobs:
       - image: cimg/node:17.2.0
     steps:
       - run:
+          command: npm install
+          name: install
+      - run:
           command: npm test
-          name: Test
+          name: test
 workflows:
   version: 2.0
   build:
