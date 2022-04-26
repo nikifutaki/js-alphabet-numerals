@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  test:
+  build:
     docker:
       - image: cimg/node:17.2.0
     steps:
@@ -9,6 +9,6 @@ jobs:
           name: Test
 workflows:
   version: 2.0
-  test:
+  build:
     jobs:
-      - test
+      - build
