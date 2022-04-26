@@ -10,3 +10,8 @@ jobs:
       - run:
           command: npm test
           name: test
+workflows:
+  version: 2.1
+  fuga:
+    jobs:
+      - test
