@@ -12,6 +12,6 @@ jobs:
           name: test
 workflows:
   version: 2.1
-  fuga:
+  test:
     jobs:
       - test
