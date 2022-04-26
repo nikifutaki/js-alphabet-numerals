@@ -4,6 +4,10 @@ jobs:
     docker:
       - image: cimg/node:17.2.0
     steps:
+      - checkout
+      - run:
+          command: 'sudo npm install -g npm@latest'
+          name: update
       - run:
           command: npm install
           name: install
