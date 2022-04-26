@@ -4,14 +4,11 @@ jobs:
     docker:
       - image: cimg/node:17.2.0
     steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: npm
       - run:
           command: npm test
-          name: test
+          name: Test
 workflows:
-  version: 2.1
+  version: 2.0
   test:
     jobs:
       - test
