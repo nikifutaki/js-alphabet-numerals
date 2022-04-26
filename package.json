@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript Alphabet Numerals(base 26oid) Library",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "ava -v"
   },
